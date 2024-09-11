@@ -24,6 +24,7 @@ body{
   background-image:url(images/img5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  rotate: 360;
 }
 .container{
   width: 1170px;
@@ -113,7 +114,7 @@ body{
 } 
 
 .adjusted-padding {
-  padding-top: 30px; 
+  padding-top: 20px; 
 }
 
 .abc{
@@ -212,6 +213,7 @@ body{
   font-size: 40px;
   line-height: 70px;
   text-transform: capitalize;
+  padding-bottom: 20px;
 }
 .about-content ul {
   color:#fff;
@@ -225,6 +227,7 @@ body{
 
 .about-skills{
   flex-basis: 35%;
+
 }
 .about-skills ul li{
   border-bottom: 1px dashed #ddd;
@@ -237,6 +240,168 @@ body{
   border-bottom: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+/*--education--*/
+.timeline-section{
+  padding-top: 50px;
+  max-width: 900px;
+	margin: 0px auto;
+	text-align: center;
+  padding-bottom: 20px;
+}
+.edutitle h4{
+  color: #fed700;
+  font-size: 40px;
+  line-height: 70px;
+  text-transform: capitalize;
+ 
+}
+.timeline-items{
+	max-width: 100%;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: skyblue;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 30px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color:yellow;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: yellow;
+	margin:6px 0 15px;
+  text-align: justify;
+}
+.timeline-content{
+    background-color: #310764;
+	padding: 10px;
+  text-align: left;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+
+/*==================== SKILLS ====================*/
+.container .main-title{
+	max-width: 800px;
+	margin: 0px auto;
+	text-align: center;
+  margin-top: 120px;
+}
+.container .main-title h1{
+	position: relative;
+	font-size: 40px;
+	color: yellow;
+	display: inline-block;
+  padding-top: 60px;
+}
+.container .row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.row .col{
+	flex-basis: 46%;
+}
+.row .col2{
+	 flex-basis: 50%;
+}
+
+.row .sub-title h2{
+	position: relative;
+	color:skyblue;
+	font-size: 22px;
+	font-family: helvetica;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+.subject{
+	color: white;
+	text-transform: uppercase;
+}
+.progress-bar{
+	position: relative;
+	width: 100%;
+	height: 5px;
+	background-color: white;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.progress-bar::after{
+	position: absolute;
+	content: attr(value);
+	top: -35px;
+	right: 0;
+	color: rgb(237, 237, 153);
+	font-size: 18px;
+}
+.progress-line{
+	position: absolute;
+	width: 0%;
+	height: 7px;
+	background-color: rgb(234, 234, 161);
+	border-radius: 15px;
+	top: -1px;
+	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+@keyframes animate{
+	100%{
+		width: 100%;
+	}
+}
+.progress-line::after{
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	background-color: skyblue;
 }
 
 
@@ -384,6 +549,54 @@ body{
     width: 100%;
     margin-top: 30px;
   }
+    .container{
+      padding: 30px 8%;
+    }
+    .timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+  .timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+
+
+  @media(max-width: 568px){
+    .container .row{
+      flex-direction: column;
+    }
+    .container .main-title h1{
+      font-size: 36px;
+    }
+    .container .row{
+      margin-top: 30px;
+    }
+    .row .col:nth-child(2){
+      margin-top: 20px;
+    }
+  }
+  
   
 }
 
