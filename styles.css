@@ -138,7 +138,7 @@ body{
   border-radius: 7px;
   height: 200px;
   margin: 10px 10px;
-  padding-left: 50px;
+  padding-left: 60px;
   padding-top: 20px;
 }
 .profile-photo img:hover{
@@ -197,7 +197,7 @@ body{
 
 .about-area{
   padding-top: 100px;
-  
+  padding-bottom: 100px;
 }
 .about{
   display: flex;
@@ -328,7 +328,7 @@ body{
 	max-width: 800px;
 	margin: 0px auto;
 	text-align: center;
-  margin-top: 120px;
+  margin-top: 140px;
 }
 .container .main-title h1{
 	position: relative;
@@ -402,6 +402,64 @@ body{
 	left: 100%;
 	transform: translate(-50%, -50%);
 	background-color: skyblue;
+}
+ /*------------project--*/
+
+.project-content{
+  padding-top: 80px;
+}
+.div.container{
+  max-height: 600px;
+}
+.project-title{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.project-title h4{
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fed700;
+
+}
+.projects{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.project{
+    padding: 30px 15px;
+    color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    flex-basis: 30%;
+    transition: .3s;
+
+}
+.project i{
+  background-color: #fed700;
+  width: 60px;
+  height: 60px;
+  color: #333;
+  font-size: 26px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+.project h4{
+  font-size: 26px;
+  text-transform: capitalize;
+  margin: 20px 0;
+  color: skyblue;
+}
+.project p{
+  text-align: justify;
+}
+.project:hover{
+  border-color: #fed700;
 }
 
 
@@ -580,7 +638,10 @@ body{
 	.timeline-dot{
 		left:0;
 	}
-
+  .project{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
 
   @media(max-width: 568px){
     .container .row{
