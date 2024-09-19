@@ -45,7 +45,7 @@
             <p>Detail-oriented BCA student seeking to improve my web development skills and a healthy environment to enhance my soft skills. Intermediate in numerous programming languages including C, JavaScript,HTML & CSS,Java and Python as well as gaining knowledge/experience in database management and web development.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field.</p>
             
             <div class="btn-group">
-                <a href="images/Rani_Kumari_ resume sunstone.pdf" class="btn   active">Download Resume</a>
+                <a href="images/Rani_Kumari_ resume sunstone.pdf" class="btn active">Download Resume</a>
                 
             </div>
 
@@ -78,7 +78,7 @@
                         <li>Name:Rani Kumari</li>
                         <li>Age:21</li>     
                         <li>From:India</li>
-                        <li>Email:xranikumarix@gmail.com</li>
+                        <li>Email:xranikumarix17@gmail.com</li>
                         <li>Availabiltiy:Fulltime</li>
                         <li>Experience&lt;1yr</li>
                     </ul>
@@ -265,6 +265,15 @@
                 </div>
             </div>
         </section>
+
+<!--video resume-->
+<div class="video-section">
+    <h1>Video resume</h1>
+    <button class="play-button" onclick="loadVideo('video-container1', 'https://www.youtube.com/embed/DtcygeHDQUE?si=9NPo3giimYJbySoZ')">Play Now</button>
+    <div class="video-container" id="video-container1"></div>
+</div>
+
+  
         
     <!--contact me-->
     <section class="contact-content" id="contact">
@@ -274,17 +283,18 @@
                 <p>Get In Touch</p>
             </div>
             <div class="contact">
-                <form name="submitToGoogleSheet">
+                <form method="post" action="https://script.google.com/macros/s/AKfycby-DxMWMt5iyB0V8rBqt4R0PFkdD5Ss8SG89UAdOyyVoRJlT8JKFj_gqIAJXtuCzOy1HA/exec" name="contact-form">
                     <input type="text" name="NAME" placeholder="Name" required>
                     <input type="tel" name="MOBILE NUMBER" placeholder="Mobile Number" required>
                     <input type="email" name="EMAIL" placeholder="Email" required>
                     <input type="text" name="ORGANIZATION" placeholder="Organization">
                     <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
+                    <input type="submit" value="Submit" class="submit">
                 </form>
-                <span id="msg"></span>
+
             </div>
         </div>
     </section>
 </body>
+<script src="script.js"></script>
 </html>
